@@ -1,11 +1,17 @@
 {
-  "name": "duck-be",
+  "name": "duck-app",
   "version": "1.0.0",
-  "description": "Simpe duck-be for having fun",
+  "description": "Simpe duck-app for having fun",
   "main": "server.js",
   "scripts": {
-    "start": "PORT=8081 node server.js"
+    "start": "node server",
+    "watch": "nodemon server",
+    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vincit/summmer-2018.git"
@@ -16,5 +22,8 @@
     "body-parser": "1.15.2",
     "cors": "^2.8.1",
     "express": "4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
   }
 }

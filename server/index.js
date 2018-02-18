@@ -2,6 +2,9 @@ const app = require('express')();
 const cors = require('cors')
 const bodyParser = require('body-parser');
 
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
+
 //Enable CORS
 app.use(cors());
 
