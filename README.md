@@ -4,7 +4,7 @@ Simple demo of a single page app with React-Ui and Node.js backend.
 
 ## Usage
 
-[Link to app](https://lit-anchorage-41591.herokuapp.com/)
+[Link to app](https://rocky-bayou-46986.herokuapp.com/)
 
 The app lists duck sightings. By default only species of the sighting and its date are displayed. You can extend any row of the list by clicking on it. The extended view gives you further information about the sighting.
 
